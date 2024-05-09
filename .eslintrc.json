@@ -1,0 +1,42 @@
+// setup guide: https://m4xshen.dev/posts/setup-nextjs-with-airbnb-eslint-prettier-typescript-and-tailwindcss/
+// only eslint is being used right now, but feel free to configure prettier + whatever
+{
+  "extends": [
+    "airbnb",
+    "airbnb-typescript",
+    "airbnb/hooks",
+    "next/core-web-vitals",
+    "plugin:testing-library/react"
+    // "plugin:jest-dom/recommended"
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "quotes": "off", // Turn off the conflicting single quotes rule from Airbnb
+    "eol-last": "off",
+    "react/require-default-props": "off",
+    "@typescript-eslint/lines-between-class-members": [
+      "error", 
+      { 
+        "enforce": [
+          { "blankLine": "never", "prev": "field", "next": "field" }
+        ]
+      }
+    ],
+    "@typescript-eslint/quotes": ["error", "double"], // Use the TypeScript ESLint version of the rule
+    "@typescript-eslint/no-unused-vars": ["error", {
+        "vars": "all",
+        "varsIgnorePattern": "_",
+        "args": "none"
+    }],
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": "variable",
+        "format": ["camelCase", "PascalCase", "UPPER_CASE"],
+        "leadingUnderscore": "allow"
+      }
+    ]
+  }
+}
