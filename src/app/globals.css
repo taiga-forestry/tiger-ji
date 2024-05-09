@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%; /* for accessibility -- this is 10px by default */
+
+  /* color variables */
+  --darker-blue: rgba(11,20,25);
+  --dark-green: rgba(48,62,49);
+  --off-white: rgba(234,230,229);
+
+  --c-scrollbar: rgba(161,161,161,0.5);
+  --c-scrollbar-hover: rgba(186,186,186,0.5);
+  --c-hover-fill: rgba(186, 186, 186, 0.1);
+}
+body {
+  min-height: 100vh;
+  background-color: var(--darker-blue);
+  color: var(--off-white);
+}
+
+/* set scrollabar to look good on dark background */
+::-webkit-scrollbar, ::-webkit-scrollbar:horizontal {
+  width: 10px;
+}
+::-webkit-scrollbar-track, ::-webkit-scrollbar-corner {
+  background: var(--darker-blue);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--c-scrollbar);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--c-scrollbar-hover);
+}
+
+/* set up the infinite scrolling forest background */
+#background {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: url("../../public/background.png");
+  opacity: 0.2;
+  z-index: -10;
+  background-repeat: repeat-x;
+  background-position: 0 0;
+  background-size: auto 100%;
+  animation: scrolling-background 400s linear infinite;
+}
+@keyframes scrolling-background {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    /* use negative width to flow right to left, positive for left to right */
+    background-position: -10000px 0;
+  }
+}
+
+/* alignment containers and positioning */
+@layer utilities {
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+  .l-column {
+    display: flex;
+    flex-direction: column;
+  }
+  .c-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .r-column {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+  }
+  .grid {
+    display: grid;
+  }
+}
+
+/* displays and transitions */
+.hover-lighten {
+  transition: opacity 0.1s linear;
+}
+.hover-lighten:hover {
+  opacity: 0.5;
+}
+.hover-darken {
+  opacity: 0.5;
+  transition: opacity 0.1s linear;
+}
+.hover-darken:hover {
+  opacity: 1;
+}
+.hover-fill {
+  transition: background-color 0.2s linear;
+}
+.hover-fill:hover {
+  background-color: var(--c-hover-fill);
+}
+
+/* background colors */
+.bg-dark-green {
+  background-color: var(--dark-green);
+}
+
+/* image backgrounds for featured projects */
+.bg-mowse {
+  background: url("../../public/mowse.png");
+}
+.bg-mowse:hover {
+  background: url("../../public/mowse-hover.png");
+}
+
+.bg-decompiler {
+  background: url("../../public/decompiler.png");
+}
+.bg-decompiler:hover {
+  background: url("../../public/decompiler-hover.png");
+}
+
+.bg-cr {
+  background: url("../../public/cr.png");
+}
+.bg-cr:hover {
+  background: url("../../public/cr-hover.png");
+}
+
+.bg-grapes {
+  background: url("../../public/grapes.png");
+}
+.bg-grapes:hover {
+  background: url("../../public/grapes-hover.png");
+}
+
+.bg-mowse, .bg-decompiler, .bg-cr, .bg-grapes,
+.bg-mowse:hover, .bg-decompiler:hover, .bg-cr:hover, .bg-grapes:hover {
+  background-size: 100% 100%; 
+  background-size: cover;
+  background-position: top;
+  transition: all 0.2s linear;
+}
