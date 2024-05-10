@@ -7,9 +7,10 @@ html {
   font-size: 62.5%; /* for accessibility -- this is 10px by default */
 
   /* color variables */
-  --darker-blue: rgba(11,20,25);
+  --dark-blue: rgba(11,20,25);
   --dark-green: rgba(48,62,49);
   --off-white: rgba(234,230,229);
+  --aqua: rgba(0, 230, 220);
 
   --c-scrollbar: rgba(161,161,161,0.5);
   --c-scrollbar-hover: rgba(186,186,186,0.5);
@@ -17,7 +18,7 @@ html {
 }
 body {
   min-height: 100vh;
-  background-color: var(--darker-blue);
+  background-color: var(--dark-blue);
   color: var(--off-white);
 }
 
@@ -26,7 +27,7 @@ body {
   width: 10px;
 }
 ::-webkit-scrollbar-track, ::-webkit-scrollbar-corner {
-  background: var(--darker-blue);
+  background: var(--dark-blue);
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb {
@@ -37,7 +38,14 @@ body {
   background: var(--c-scrollbar-hover);
 }
 
-/* set up the infinite scrolling forest background */
+/* set up the infinite scrolling forest background + tj logo hover color */
+.tj-logo {
+  transition: color 0.1s linear;
+}
+.tj-logo:hover {
+  color: var(--aqua);
+}
+
 #background {
   width: 100%;
   height: 100%;
@@ -109,8 +117,8 @@ body {
 }
 
 /* background colors */
-.bg-dark-green {
-  background-color: var(--dark-green);
+.bg-dark-blue {
+  background-color: var(--dark-blue);
 }
 
 /* image backgrounds for featured projects */

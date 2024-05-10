@@ -9,7 +9,7 @@ export default function NavBar({ page }: NavBarProps) {
   return (
     <>
       <nav className={`hidden sm:grid grid-cols-[auto_1fr_auto_auto_auto_auto] text-16 w-full ${page === "home" && "fixed"}`}>
-        <a className="p-24 text-20" href="/"> TJ </a>
+        <a className="p-24 text-20 tj-logo" href="/"> TJ </a>
         <div />
         <a className={`p-24 ${page !== "about" && "hover-darken"}`} href="/about"> About </a>
         <a className={`p-24 ${page !== "projects" && "hover-darken"}`} href="/projects"> Projects </a>
@@ -25,7 +25,7 @@ export default function NavBar({ page }: NavBarProps) {
       </nav>
 
       <nav className={`sm:hidden grid grid-cols-[auto_1fr_auto] text-16 w-full ${page === "home" && "fixed"}`}>
-        <a className="p-24 text-20" href="/"> TJ </a>
+        <a className="p-24 text-20 tj-logo" href="/"> TJ </a>
         <div />
         <NavDropdown page={page} />
       </nav>

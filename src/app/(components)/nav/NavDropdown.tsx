@@ -25,7 +25,7 @@ export default function NavDropdown({ page }: NavDropdownProps) {
       <AnimatePresence>
         { isOpen && (
           <motion.div
-            className="absolute right-0 z-40 p-24 mt-12 text-16 gap-20 c-column rounded bg-dark-green"
+            className="absolute right-10 z-40 p-24 mt-12 text-16 gap-20 c-column rounded bg-dark-blue"
             initial={{ opacity: 0, y: "-1.2rem" }}
             animate={{ opacity: 1, y: "0rem" }}
             exit={{ opacity: 0, y: "-1.2rem" }}

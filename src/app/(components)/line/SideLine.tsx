@@ -13,7 +13,7 @@ export default function SideLine({
   const orientation = side === "right" ? "grid-cols-[1fr_auto]" : "grid-cols-[auto_1fr]";
 
   return (
-    <span className={`grid ${orientation} gap-${gap || defaultGap}`}>
+    <span className={`grid ${orientation} gap-${gap || defaultGap} w-full`}>
       <h1 className={`text-${fontSize || defaultFontSize}`}>
         { text }
       </h1>
