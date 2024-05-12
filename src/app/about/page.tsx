@@ -63,7 +63,7 @@ export default function AboutPage() {
 
         <div className="p-48 l-column w-full gap-14">
           <p className="text-14">
-            { "Want to discuss anything from my projects to my opinions on the NBA? I'dd love to meet you – feel free to reach out at " }
+            { "Want to discuss anything from my projects to my opinions on the NBA? I'd love to meet you – feel free to reach out at " }
             <a href="mailto:tiger.j540@gmail.com" className="hover-underline-animation" target="_blank"> tiger.j540@gmail.com </a>
             <i className="fa-regular fa-face-smile ml-[4px]" />
           </p>
