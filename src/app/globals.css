@@ -40,7 +40,7 @@ body {
 
 /* set up the infinite scrolling forest background + tj logo hover color */
 .tj-logo {
-  transition: color 0.1s linear;
+  transition: color 0.2s linear;
 }
 .tj-logo:hover {
   color: var(--aqua);
@@ -97,16 +97,24 @@ body {
 
 /* displays and transitions */
 .hover-lighten {
-  transition: opacity 0.1s linear;
+  transition: opacity 0.2s linear;
 }
 .hover-lighten:hover {
   opacity: 0.5;
 }
 .hover-darken {
   opacity: 0.5;
-  transition: opacity 0.1s linear;
+  transition: opacity 0.2s linear;
 }
 .hover-darken:hover {
+  opacity: 1;
+}
+.hover-aqua {
+  opacity: 0.5;
+  transition: all 0.2s linear;
+}
+.hover-aqua:hover {
+  color: var(--aqua);
   opacity: 1;
 }
 .hover-fill {
@@ -156,4 +164,28 @@ body {
   background-size: cover;
   background-position: top;
   transition: all 0.2s linear;
+}
+
+/* hover underline for links */
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: var(--aqua);
+}
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  border-radius: 2.5px;
+  background-color: var(--aqua);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
