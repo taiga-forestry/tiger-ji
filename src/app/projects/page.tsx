@@ -31,7 +31,7 @@ export default function ProjectsPage() {
           <OtherProject title="SmartBills" description="Simplifying shared expense tracking once and for all" tools={["Next.js", "Firebase"]} links={{ github: "FIXME", demo: "FIXME" }} />
           <OtherProject title="BumbleBase" description="Implementing indexing, concurrency, transactions, and more for a fully functional relational database" tools={["Go"]} links={{ demo: "https://sites.google.com/view/csci1270/projects?authuser=2" }} />
           <OtherProject title="Caching I/O" description="Optimizing read, write, and seek system calls for a custom file I/O library" tools={["C/C++"]} links={{ demo: "https://cs.brown.edu/courses/csci0300/2023/assign/projects/project3.html" }} />
-          <OtherProject title="My Portfolio" description="Made with <> 2024" tools={["React", "Tailwind"]} links={{ github: "https://github.com/taiga-forestry/taiga-forestry.github.io" }} />
+          <OtherProject title="My Portfolio" description="Made with <> 2024" tools={["React", "Tailwind"]} links={{ github: "https://github.com/taiga-forestry/tiger-ji" }} />
         </section>
       </main>
 
