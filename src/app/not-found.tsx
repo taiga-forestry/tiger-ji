@@ -12,7 +12,7 @@ export default function NotFoundPage() {
             <h1 className="text-20"> Sorry, this page could not be found. </h1>
             <h1 className="text-20">
               { "If this is unexpected, please let me know at " }
-              <a href="mailto:tiger.j540@gmail.com" className="underline hover-lighten">
+              <a href="mailto:tiger.j540@gmail.com" className="hover-underline-animation" target="_blank">
                 tiger.j540@gmail.com
               </a>
               .
