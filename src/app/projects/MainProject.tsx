@@ -12,7 +12,10 @@ export default function MainProject({
   title, description, src, tools, links,
 }: MainProjectProps) {
   return (
-    <div className={`l-column gap-[100px] sm:gap-[200px] p-24 rounded-xl bg-${src}`}>
+    <div className={`relative l-column gap-[100px] sm:gap-[200px] p-24 rounded-xl bg-${src}`}>
+      {/* THIS DIV DOES NOTHING -- it is used to preload the hovered image to prevent glitches */}
+      <span className="absolute w-full h-full top-0 left-0" style={{ background: `url(../../../public/bg-${src}-hover)` }} />
+
       <figcaption>
         <h1 className="text-20">
           { title }
