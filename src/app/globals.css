@@ -163,7 +163,7 @@ body {
   background-size: 100% 100%; 
   background-size: cover;
   background-position: top;
-  transition: all 0.2s linear;
+  transition: background 0.2s linear;
 }
 
 /* hover underline for links */
