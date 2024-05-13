@@ -8,7 +8,7 @@ import OtherProject from "./OtherProject";
 
 export default function ProjectsPage() {
   return (
-    <>
+    <div className="grid grid-rows-[auto_1fr_auto] min-h-[100vh]">
       <NavBar page="projects" />
 
       <main className="xs:px-48 lg:px-[120px] py-24">
@@ -36,6 +36,6 @@ export default function ProjectsPage() {
       </main>
 
       <Footer />
-    </>
+    </div>
   );
 }

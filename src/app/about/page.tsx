@@ -7,7 +7,7 @@ import me from "../../../public/me.png";
 
 export default function AboutPage() {
   return (
-    <>
+    <div className="grid grid-rows-[auto_1fr_auto] min-h-[100vh]">
       <NavBar page="about" />
 
       <main className="xs:px-48 lg:px-[120px] py-24 c-column">
@@ -71,6 +71,6 @@ export default function AboutPage() {
       </main>
 
       <Footer />
-    </>
+    </div>
   );
 }
