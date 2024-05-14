@@ -10,11 +10,11 @@ export default function AboutPage() {
     <div className="grid grid-rows-[auto_1fr_auto] min-h-[100vh]">
       <NavBar page="about" />
 
-      <main className="xs:px-48 lg:px-[120px] py-24 c-column">
+      <main className="px-48 lg:px-[120px] py-24 c-column">
         <SideLine text="About Me" />
         <p className="text-14 self-start"> My background, passions, aspirations, and more. </p>
 
-        <section className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-24 xs:p-24 md:p-48">
+        <section className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-24 p-24 md:p-48">
           <div className="l-column gap-14">
             <p className="text-14">
               Hi there!
@@ -61,7 +61,7 @@ export default function AboutPage() {
         </section>
         <Separator />
 
-        <div className="xs:p-24 md:p-48 l-column w-full gap-14">
+        <div className="p-24 md:p-48 l-column w-full gap-14">
           <p className="text-14">
             { "Want to discuss anything from my projects to my opinions on the NBA? I'd love to meet you – feel free to reach out at " }
             <a href="mailto:tiger.j540@gmail.com" className="hover-underline-animation" target="_blank"> tiger.j540@gmail.com </a>
