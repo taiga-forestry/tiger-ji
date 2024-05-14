@@ -1,9 +1,10 @@
-import { ValidLink, linksMap } from "./types";
+import Image from "next/image";
+import { ValidLink, linksMap, projectsSrcMap } from "./types";
 
 interface MainProjectProps {
   title: string
   description: string
-  src: string
+  src: keyof typeof projectsSrcMap
   tools: string[]
   links: Partial<Record<ValidLink, string>>
 }
@@ -12,11 +13,11 @@ export default function MainProject({
   title, description, src, tools, links,
 }: MainProjectProps) {
   return (
-    <div className={`relative l-column gap-[100px] sm:gap-[200px] p-24 rounded-xl bg-${src}`}>
-      {/* THIS DIV DOES NOTHING -- it is used to preload the hovered image to prevent glitches */}
-      <span className="absolute w-full h-full top-0 left-0" style={{ background: `url(../../../public/bg-${src}-hover)` }} />
+    <div className="relative l-column gap-[100px] sm:gap-[200px] p-24 main-project">
+      <Image className="absolute top-0 left-0 w-full h-full rounded-xl object-cover object-top" src={projectsSrcMap[src].hovered} alt={`Image for featured project ${title}`} />
+      <Image className="absolute top-0 left-0 w-full h-full rounded-xl object-cover object-top main-project-img" src={projectsSrcMap[src].normal} alt={`Image for featured project ${title}`} />
 
-      <figcaption>
+      <figcaption className="z-10">
         <h1 className="text-20">
           { title }
         </h1>
@@ -25,7 +26,7 @@ export default function MainProject({
         </p>
       </figcaption>
 
-      <div className="row justify-between gap-16 items-center">
+      <div className="row justify-between gap-16 items-center z-10">
         <p className="text-14">
           { tools.join(", ") }
         </p>
