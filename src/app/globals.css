@@ -129,43 +129,6 @@ body {
   background-color: var(--dark-blue);
 }
 
-/* image backgrounds for featured projects */
-.bg-mowse {
-  background: url("../../public/mowse.png");
-}
-.bg-mowse:hover {
-  background: url("../../public/mowse-hover.png");
-}
-
-.bg-decompiler {
-  background: url("../../public/decompiler.png");
-}
-.bg-decompiler:hover {
-  background: url("../../public/decompiler-hover.png");
-}
-
-.bg-cr {
-  background: url("../../public/cr.png");
-}
-.bg-cr:hover {
-  background: url("../../public/cr-hover.png");
-}
-
-.bg-grapes {
-  background: url("../../public/grapes.png");
-}
-.bg-grapes:hover {
-  background: url("../../public/grapes-hover.png");
-}
-
-.bg-mowse, .bg-decompiler, .bg-cr, .bg-grapes,
-.bg-mowse:hover, .bg-decompiler:hover, .bg-cr:hover, .bg-grapes:hover {
-  background-size: 100% 100%; 
-  background-size: cover;
-  background-position: top;
-  transition: all 0.2s linear;
-}
-
 /* hover underline for links */
 .hover-underline-animation {
   display: inline-block;
@@ -188,4 +151,12 @@ body {
 .hover-underline-animation:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+/* main project image backgrounds for featured projects */
+.main-project-img {
+  transition: all 0.2s linear;
+}
+.main-project:hover .main-project-img {
+  opacity: 0;
 }

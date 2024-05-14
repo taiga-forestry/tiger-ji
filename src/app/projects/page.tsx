@@ -1,5 +1,3 @@
-"use client";
-
 import NavBar from "../(components)/nav/NavBar";
 import Footer from "../(components)/footer/Footer";
 import SideLine from "../(components)/line/SideLine";
@@ -11,11 +9,11 @@ export default function ProjectsPage() {
     <div className="grid grid-rows-[auto_1fr_auto] min-h-[100vh]">
       <NavBar page="projects" />
 
-      <main className="xs:px-48 lg:px-[120px] py-24">
+      <main className="px-48 lg:px-[120px] py-24">
         <SideLine text="Featured Work" />
         <p className="text-14"> A few carefully curated projects that I&apos;m particularly proud of. </p>
 
-        <section className="grid lg:grid-cols-2 xs:py-24 md:p-36 gap-24 justify-center">
+        <section className="grid lg:grid-cols-2 py-24 md:p-36 gap-24 justify-center">
           <MainProject title="MoWSE" description="Building out a scalable, fully distributed search engine from scratch" src="mowse" tools={["JavaScript", "Bash", "AWS"]} links={{ github: "FIXME", demo: "FIXME" }} />
           <MainProject title="The Critical Review" description="Revamping Brown University's official site for course & professor reviews" src="cr" tools={["Next.js", "MySQL", "Jest"]} links={{ demo: "https://thecriticalreview.org/" }} />
           <MainProject title="Neural Decompiler" description="Demystifying x86-64 assembly with transformer neural networks " src="decompiler" tools={["Python", "TensorFlow", "Flask"]} links={{ github: "https://github.com/taiga-forestry/neural-decompiler", demo: "https://neuraldecompiler.pythonanywhere.com/" }} />
@@ -25,7 +23,7 @@ export default function ProjectsPage() {
         <SideLine text="Other Projects" />
         <p className="text-14"> An assortment of some other notable work that might pique your interest. </p>
 
-        <section className="grid md:grid-cols-2 xs:py-24 sm:p-24 justify-center">
+        <section className="grid md:grid-cols-2 py-24 sm:p-24 justify-center">
           <OtherProject title="Partiful" description="Designing new, fun features for Gen Z's favorite party planning site" tools={["Figma"]} links={{ demo: "https://cs1300-iterative-design.vercel.app/" }} />
           <OtherProject title="Word Hunt Solver" description="Solving my favorite word game like a true computer scientist" tools={["Python, Flask"]} links={{ github: "https://github.com/taiga-forestry/Word-Hunt-Solver", demo: "https://whsolver.pythonanywhere.com/" }} />
           <OtherProject title="SmartBills" description="Simplifying shared expense tracking once and for all" tools={["Next.js", "Firebase"]} links={{ github: "FIXME", demo: "FIXME" }} />
