@@ -13,7 +13,7 @@ export default function NavBar({ page }: NavBarProps) {
         <div />
         <a className={`p-24 ${page !== "about" && "hover-darken"}`} href="/about"> About </a>
         <a className={`p-24 ${page !== "projects" && "hover-darken"}`} href="/projects"> Projects </a>
-        <a className="p-24 hover-darken" href="/resume"> Resume </a>
+        <a className="p-24 hover-darken" href="/resume" target="_blank"> Resume </a>
         <div className="p-24 text-24 row gap-16">
           <a href="https://github.com/taiga-forestry" target="_blank" className="flex">
             <i className="fa-brands fa-github hover-darken h-full w-full" aria-label="link to my github" />
