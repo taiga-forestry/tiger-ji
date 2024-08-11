@@ -21,13 +21,13 @@ export default function AboutPage() {
             </p>
 
             <p className="text-14">
-              { "My name is Tiger Ji, and I'm currently pursuing a B.S. in Computer Science and Applied Mathematics at " }
+              { "My name is Tiger, and I'm currently pursuing a B.S. in Computer Science and Applied Mathematics at " }
               <a href="https://www.brown.edu/" className="hover-underline-animation" target="_blank"> Brown University </a>
               .
 
               { " I was a software engineering intern at " }
               <a href="https://braze.com/" className="hover-underline-animation" target="_blank"> Braze </a>
-              { " in the summers of 2023 and 2024, working on projects ranging from scaling out Java microservices and Kafka data streaming pipelines to developing Figma plugins in TypeScript and React." }
+              { " in the summers of 2023 and 2024, working on projects ranging from architecting scalable, fault-tolerant microservices in Java/Kotlin to developing Figma plugins in TypeScript and React." }
             </p>
 
             <p className="text-14">

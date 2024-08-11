@@ -1,7 +1,7 @@
 import mowse from "../../../public/mowse.png";
 import mowsehover from "../../../public/mowse-hover.png";
-import grapes from "../../../public/grapes.png";
-import grapeshover from "../../../public/grapes-hover.png";
+import replay from "../../../public/replay.png";
+import replayHover from "../../../public/replay-hover.png";
 import decompiler from "../../../public/decompiler.png";
 import decompilerhover from "../../../public/decompiler-hover.png";
 import cr from "../../../public/cr.png";
@@ -29,9 +29,13 @@ export const projectsSrcMap = {
     normal: cr,
     hovered: crhover,
   },
-  grapes: {
-    normal: grapes,
-    hovered: grapeshover,
+  // grapes: {
+  //   normal: grapes,
+  //   hovered: grapeshover,
+  // },
+  replay: {
+    normal: replay,
+    hovered: replayHover,
   },
 };
 
