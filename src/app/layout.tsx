@@ -1,12 +1,13 @@
 "use client";
 
-// import type { Metadata } from "next";
 import { AnimatePresence, motion } from "framer-motion";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { quattrocentoSans } from "./fonts";
 import "./globals.css";
 
 // export const metadata: Metadata = {
-//   title: "Tiger Ji's Portfolio",
+//   title: "Tiger Ji's Website",
 //   description: "Hi there! I'm Tiger.",
 // };
 
@@ -38,6 +39,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
             { children }
           </motion.div>
         </AnimatePresence>
+
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
