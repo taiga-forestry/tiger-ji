@@ -24,23 +24,30 @@ export default function AboutPage() {
               { "My name is Tiger, and I'm currently pursuing a B.S. in Computer Science and Applied Mathematics at " }
               <a href="https://www.brown.edu/" className="hover-underline-animation" target="_blank"> Brown University </a>
               .
-
-              { " I was a software engineering intern at " }
-              <a href="https://braze.com/" className="hover-underline-animation" target="_blank"> Braze </a>
-              { " in the summers of 2023 and 2024, working on projects ranging from architecting scalable, fault-tolerant microservices in Java/Kotlin to developing Figma plugins in TypeScript and React." }
             </p>
 
             <p className="text-14">
-              { "At Brown, I managed a team of over 10 students as the engineering manager for the " }
-              <a href="https://thecriticalreview.org/" className="hover-underline-animation" target="_blank"> Critical Review</a>
-              , the official site for course & professor reviews used by thousands of students
-              per month.
+              { "Previously, I was a SWE intern at " }
+              <a href="https://braze.com/" className="hover-underline-animation" target="_blank"> Braze </a>
+              { " in the summers of 2023 and 2024, working on projects ranging from architecting scalable, fault-tolerant microservices in Java/Kotlin to developing Figma plugins in TypeScript and React." }
 
-              { " I also served as a TA for our data structures and algorithm course "}
+              { " Looking forward, I'm excited to join " }
+              <a href="https://palantir.com/" className="hover-underline-animation" target="_blank"> Palantir </a>
+              { " as a full-time software engineer in the NYC office in August 2025."}
+            </p>
+
+            <p className="text-14">
+              { "At Brown, I managed 10+ students as the web team lead for the " }
+              <a href="https://thecriticalreview.org/" className="hover-underline-animation" target="_blank"> Critical Review</a>
+              , our official site for course & professor reviews used by thousands of students.
+
+              { " I also was a TA for our data structures & algorithms "}
               <a href="https://brown-csci0200.github.io/" className="hover-underline-animation" target="_blank"> (CSCI 0200) </a>
-              { " for two semesters and am an incoming TA for our database systems course " }
+              { " and database systems " }
               <a href="https://sites.google.com/view/csci1270/" className="hover-underline-animation" target="_blank"> (CSCI 1270) </a>
-              .
+              { " courses, and will TA our distributed systems course " }
+              <a href="https://cs.brown.edu/courses/csci1380/" className="hover-underline-animation" target="_blank"> (CSCI 1380) </a>
+              { " in the 2025 spring semester." }
             </p>
 
             <p className="text-14">

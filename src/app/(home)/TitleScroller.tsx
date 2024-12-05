@@ -6,7 +6,7 @@ import { AnimatePresence, motion } from "framer-motion";
 export default function TitleScroller() {
   const [index, setIndex] = useState(0);
   const titles = [
-    "an aspiring software engineer",
+    "(incoming) dev @ palantir",
     "a diehard classical musician",
     "a budding breakdancer",
     "a fan of all things basketball",
