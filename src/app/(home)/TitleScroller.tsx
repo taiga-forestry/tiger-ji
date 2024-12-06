@@ -9,7 +9,7 @@ export default function TitleScroller() {
     "an incoming dev @ palantir",
     "a diehard classical musician",
     "a budding b-boy in training",
-    "a pickup basketball enthusiast",
+    "a pickup basketball and NBA enthusiast",
     "a fan of all things word games",
     "nature's favorite photographer",
     "an exploratory eater and traveler",
