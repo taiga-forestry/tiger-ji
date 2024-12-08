@@ -21,7 +21,7 @@ export default function AboutPage() {
             </p>
 
             <p className="text-14">
-              { "My name is Tiger, and I'm currently pursuing a B.S. in Computer Science and Applied Mathematics at " }
+              { "My name is Tiger, and I'm currently pursuing a B.S. in Computer Science and A.B. in Applied Mathematics at " }
               <a href="https://www.brown.edu/" className="hover-underline-animation" target="_blank"> Brown University </a>
               .
             </p>
