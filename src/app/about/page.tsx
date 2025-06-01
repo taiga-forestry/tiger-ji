@@ -21,9 +21,9 @@ export default function AboutPage() {
             </p>
 
             <p className="text-14">
-              { "My name is Tiger, and I'm currently pursuing a B.S. in Computer Science and A.B. in Applied Mathematics at " }
+              { "My name is Tiger, and I recently graduated " }
               <a href="https://www.brown.edu/" className="hover-underline-animation" target="_blank"> Brown University </a>
-              .
+              { " with a B.S. in Computer Science and B.A. in Applied Mathematics." }
             </p>
 
             <p className="text-14">
@@ -41,24 +41,21 @@ export default function AboutPage() {
               <a href="https://thecriticalreview.org/" className="hover-underline-animation" target="_blank"> Critical Review</a>
               , our official site for course & professor reviews used by thousands of students.
 
-              { " I also was a TA for our data structures & algorithms "}
+              { " I also was a TA for Brown's data structures & algorithms "}
               <a href="https://brown-csci0200.github.io/" className="hover-underline-animation" target="_blank"> (CSCI 0200) </a>
-              { " and database systems " }
+              { ", database systems " }
               <a href="https://sites.google.com/view/csci1270/" className="hover-underline-animation" target="_blank"> (CSCI 1270) </a>
-              { " courses, and will TA our distributed systems course " }
+              { ", and distributed systems " }
               <a href="https://cs.brown.edu/courses/csci1380/" className="hover-underline-animation" target="_blank"> (CSCI 1380) </a>
-              { " in the 2025 spring semester." }
+              { " courses." }
             </p>
 
             <p className="text-14">
-              { "Outside of my academic and professional endeavors, you'll most likely find me playing violin in the " }
-              <a href="https://www.brown.edu/Departments/Music/sites/orchestra/" className="hover-underline-animation" target="_blank"> Brown University Orchestra</a>
-              ,
-              { " spinning all over the floor with Brown's " }
-              <a href="https://www.instagram.com/browngroundbreakin/" className="hover-underline-animation" target="_blank"> premier breakdance club</a>
-              , or playing basketball on any court I can
-              find. I also love exploring a city&apos;s restaurant scene, photographing nature,
-              and playing word games such as Word Hunt or anything on the New York Times Games site.
+              Outside of my academic and professional endeavors, you&apos;ll most likely find me
+              playing violin with an orchestra or small ensemble, spinning all over the floor with
+              other bboys, or playing pickup basketball on any court I can find. I also love
+              exploring a city&apos;s culinary scene, photographing nature, and playing word games
+              like Word Hunt or anything on the New York Times Games site.
             </p>
           </div>
 
