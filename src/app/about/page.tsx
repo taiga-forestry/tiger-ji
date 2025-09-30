@@ -50,7 +50,7 @@ export default function AboutPage() {
             <p className="text-14">
               Outside of my academic and professional interests, you&apos;ll most likely find me
               playing violin in an orchestra or small ensemble, spinning around with some bboys,
-              or playing pickup basketball on any court I can find. I also love exploring a
+              or playing pickup basketball on any court I can find. I also enjoy exploring a
               city&apos;s culinary scene, photographing nature, and playing word games from Word
               Hunt to anything on the New York Times Games site.
             </p>
