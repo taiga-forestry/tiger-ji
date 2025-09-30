@@ -21,41 +21,38 @@ export default function AboutPage() {
             </p>
 
             <p className="text-14">
-              { "My name is Tiger, and I recently graduated " }
-              <a href="https://www.brown.edu/" className="hover-underline-animation" target="_blank"> Brown University </a>
-              { " with a B.S. in Computer Science and B.A. in Applied Mathematics." }
-            </p>
-
-            <p className="text-14">
-              { "Previously, I was a SWE intern at " }
-              <a href="https://braze.com/" className="hover-underline-animation" target="_blank"> Braze </a>
-              { " in the summers of 2023 and 2024, working on projects ranging from architecting scalable, fault-tolerant microservices in Java/Kotlin to developing Figma plugins in TypeScript and React." }
-
-              { " Looking forward, I'm excited to join " }
+              { "My name is Tiger, and I'm a software engineer based in NYC working on core distributed systems infrastructure for " }
+              <a href="https://cloud.google.com/pubsub/docs/overview" className="hover-underline-animation" target="_blank"> Google Cloud Pub/Sub </a>
+              { ". Before joining Google, I worked briefly at " }
               <a href="https://palantir.com/" className="hover-underline-animation" target="_blank"> Palantir </a>
-              { " as a full-time software engineer in the NYC office in August 2025."}
+              { " and interned for multiple summers at " }
+              <a href="https://braze.com/" className="hover-underline-animation" target="_blank"> Braze </a>
+              .
             </p>
 
             <p className="text-14">
-              { "At Brown, I managed 10+ students as the web team lead for the " }
-              <a href="https://thecriticalreview.org/" className="hover-underline-animation" target="_blank"> Critical Review</a>
-              , our official site for course & professor reviews used by thousands of students.
+              { "I'm also a proud alumnus of " }
+              <a href="https://brown.edu/" className="hover-underline-animation" target="_blank"> Brown University </a>
 
-              { " I also was a TA for Brown's data structures & algorithms "}
-              <a href="https://brown-csci0200.github.io/" className="hover-underline-animation" target="_blank"> (CSCI 0200) </a>
-              { ", database systems " }
-              <a href="https://sites.google.com/view/csci1270/" className="hover-underline-animation" target="_blank"> (CSCI 1270) </a>
-              { ", and distributed systems " }
+              { ", where I served as the web team lead for the " }
+              <a href="https://thecriticalreview.org/" className="hover-underline-animation" target="_blank"> Critical Review </a>
+              , our official site for course & professor reviews used by thousands of students
+
+              { ". I was also a TA for our distributed systems "}
               <a href="https://cs.brown.edu/courses/csci1380/" className="hover-underline-animation" target="_blank"> (CSCI 1380) </a>
+              { ", databases " }
+              <a href="https://sites.google.com/view/csci1270/" className="hover-underline-animation" target="_blank"> (CSCI 1270) </a>
+              { ", and data structures & algorithms " }
+              <a href="https://brown-csci0200.github.io/" className="hover-underline-animation" target="_blank"> (CSCI 0200) </a>
               { " courses." }
             </p>
 
             <p className="text-14">
-              Outside of my academic and professional endeavors, you&apos;ll most likely find me
-              playing violin with an orchestra or small ensemble, spinning all over the floor with
-              other bboys, or playing pickup basketball on any court I can find. I also love
-              exploring a city&apos;s culinary scene, photographing nature, and playing word games
-              like Word Hunt or anything on the New York Times Games site.
+              Outside of my academic and professional interests, you&apos;ll most likely find me
+              playing violin in an orchestra or small ensemble, spinning around with some bboys,
+              or playing pickup basketball on any court I can find. I also love exploring a
+              city&apos;s culinary scene, photographing nature, and playing word games from Word
+              Hunt to anything on the New York Times Games site.
             </p>
           </div>
 
@@ -67,7 +64,7 @@ export default function AboutPage() {
 
         <div className="p-24 md:p-48 l-column w-full gap-14">
           <p className="text-14">
-            { "Want to discuss anything from my projects to my opinions on the NBA? I'd love to meet you – feel free to reach out at " }
+            { "Want to discuss anything from my projects to my opinions on the NBA? I'd love to meet you — feel free to reach out at " }
             <a href="mailto:tiger.j540@gmail.com" className="hover-underline-animation" target="_blank"> tiger.j540@gmail.com </a>
             <i className="fa-regular fa-face-smile ml-[4px]" />
           </p>
