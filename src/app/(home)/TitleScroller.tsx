@@ -6,13 +6,13 @@ import { AnimatePresence, motion } from "framer-motion";
 export default function TitleScroller() {
   const [index, setIndex] = useState(0);
   const titles = [
-    "an incoming dev @ palantir",
+    "a software engineer at Google",
     "a diehard classical musician",
     "a budding b-boy in training",
-    "a pickup basketball and NBA enthusiast",
-    "a fan of all things word games",
-    "nature's favorite photographer",
-    "an exploratory eater and traveler",
+    "an NBA and pickup hoops enthusiast",
+    "a lover of all things word games",
+    "a nature photography fanatic",
+    "an adventurous eater and traveler",
   ];
 
   // every re-render, schedule another title to be set (cycle forever!)
