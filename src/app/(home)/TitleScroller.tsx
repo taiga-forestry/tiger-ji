@@ -11,7 +11,7 @@ export default function TitleScroller() {
     "a budding b-boy in training",
     "an NBA and pickup hoops enthusiast",
     "a lover of all things word games",
-    "a nature photography fanatic",
+    "an avid nature photographer",
     "an adventurous eater and traveler",
   ];
 
