@@ -52,7 +52,7 @@ export default function AboutPage() {
               <a href="https://orchestra.brown.edu/" className="hover-underline-animation" target="_blank"> orchestra </a>
               {" or "}
               <a href="https://youtu.be/QPmFT7kCUIU?si=E0BNRXpjENSl8yUN&t=1310" className="hover-underline-animation" target="_blank"> small ensemble </a>
-              , spinning around with
+              {", spinning around with "}
               <a href="https://www.instagram.com/browngroundbreakin/" className="hover-underline-animation" target="_blank"> some bboys </a>
               , or playing pickup basketball on any court I can find.
 
