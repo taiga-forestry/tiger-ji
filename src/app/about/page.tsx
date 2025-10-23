@@ -48,11 +48,16 @@ export default function AboutPage() {
             </p>
 
             <p className="text-14">
-              Outside of my academic and professional interests, you&apos;ll most likely find me
-              playing violin in an orchestra or small ensemble, spinning around with some bboys,
-              or playing pickup basketball on any court I can find. I also enjoy exploring a
-              city&apos;s culinary scene, photographing nature, and playing word games from Word
-              Hunt to anything on the New York Times Games site.
+              {"Outside of my academic and professional interests, you'll most likely find me playing violin in an "}
+              <a href="https://orchestra.brown.edu/" className="hover-underline-animation" target="_blank"> orchestra </a>
+              {" or "}
+              <a href="https://youtu.be/QPmFT7kCUIU?si=E0BNRXpjENSl8yUN&t=1310" className="hover-underline-animation" target="_blank"> small ensemble </a>
+              , spinning around with
+              <a href="https://www.instagram.com/browngroundbreakin/" className="hover-underline-animation" target="_blank"> some bboys </a>
+              , or playing pickup basketball on any court I can find.
+
+              I also enjoy exploring NYC&apos;s culinary scene, photographing nature, and playing
+              word games ranging from Word Hunt to anything on the New York Times Games site.
             </p>
           </div>
 
